@@ -1,6 +1,28 @@
-$w:50px;
 .header {
-    content: header;
-    width: $w;
-    height: $w;
+    height: 130px;
+    width: $box_width;
+    margin: 0 auto;
+}
+
+.head_logo {
+    width: 290px;
+    height: 130px;
+    border: 1px solid blue;
+    margin-right: 40px;
+}
+
+.head_search {
+    float: left;
+    height: 36px;
+    width: 491px;
+    box-sizing: border-box;
+}
+
+#search {
+    border: none;
+    height: 36px;
+    width: 491px;
+    border: 2px solid red;
+    margin-top: 50px;
+    margin-left: 40px;
 }

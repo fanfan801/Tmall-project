@@ -1,0 +1,130 @@
+.banner {
+    width: $box_width;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.bannertitle {
+    width: 190px;
+    height: 40px;
+    border: 1px solid red;
+    margin-left: -328px;
+}
+
+.btspan1,
+.btspan2 {
+    width: 95px;
+    display: block;
+    text-align: center;
+    font-size: $font14;
+    // line-height: 38px;
+}
+
+.btspan1 {
+    // background-color: red;
+}
+
+.banner_menu ul {
+    overflow: hidden;
+    padding: 10px 0;
+    height: 450px;
+    background-color: #fefefe;
+    color: #636363;
+    margin-top: 10px;
+    width: 190px;
+    border: 1px solid red;
+}
+
+.banner_menu ul li {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+}
+
+.banner_menu ul li.active {
+    background-color: #d9d9d9;
+}
+
+.banner_menu li a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.banner_menu li span {
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.cartlist {
+    position: absolute;
+    left: 191px;
+    top: 0;
+    width: 998px;
+    min-height: 468px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+    display: none;
+    transition: top 0.3s ease;
+}
+
+.item {
+    padding: 20px;
+    display: none;
+}
+
+.banner_menu {
+    width: 190px;
+    position: relative;
+}
+
+.menu-left {
+    margin-top: 20px;
+}
+
+.menu-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.menu-right ul {
+    background-color: rgba(0, 0, 0, .55)
+}
+
+.menu-right ul li {
+    width: 140px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 12px;
+    line-height: 30px;
+}
+
+.banner_ad {
+    border: 1px solid red;
+    width: 1000px;
+    float: right;
+    float: left;
+}
+
+.banner_nav ul {
+    // border: 1px solid red;
+}
+
+.banner_nav ul li {
+    float: left;
+}
+
+.bannertitle,
+.banner_ad {
+    float: left;
+}
+
+.banner_ad {
+    width: 700px;
+}
