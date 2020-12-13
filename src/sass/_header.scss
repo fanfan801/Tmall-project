@@ -7,22 +7,40 @@
 .head_logo {
     width: 290px;
     height: 130px;
-    border: 1px solid blue;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
+.head_logo img {
+    width: 240px;
+    height: 130px;
+}
+
+// 搜索框
 .head_search {
     float: left;
-    height: 36px;
-    width: 491px;
-    box-sizing: border-box;
+    height: 38px;
+    width: 602px;
+    margin-top: 40px;
+    line-height: 36px;
+    border: 2px solid red;
 }
 
-#search {
+.searchk {
     border: none;
+    outline: none;
+    width: 464px;
     height: 36px;
-    width: 491px;
-    border: 2px solid red;
-    margin-top: 50px;
-    margin-left: 40px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.btnss {
+    display: block;
+    width: 130px;
+    height: 37px;
+    background-color: red;
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
 }

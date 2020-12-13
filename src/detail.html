@@ -4,10 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/detail.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="detail_module"></script>
 </head>
 
 <body>
+    <!-- 详情页的头部 -->
+    <div class="xqtb">
+        <div class="header clear">
+            <div class="head_logo fl">
+                <a href="https://www.tmall.com/?spm=a2240.7829288.a2226n0.1.2fd74fe5xkVo7e">
+                    <img src="https://img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" alt="" srcset="">
+                </a>
+
+            </div>
+            <!-- 下拉菜单 -->
+            <div class="head_search">
+                <div class="search">
+                    <input type="text" id="search" class="searchk" placeholder=" 请输入关键字 ">
+                    <button class="btnss">搜  索</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 详情页的标题 -->
+    <div class="xqtitlebox">
+        <div class="xqtitle">
+            <img src="http://gdp.alicdn.com/imgextra/i3/628230280/O1CN019kbliC1DwHXFnnDDJ_!!628230280.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    <!-- 详情页的渲染 -->
+    <div class="goodsinfo">
+        <div class="box">
+            <a href="cart.html" target="_blank">进入购物车</a>
+        </div>
+        <!-- 左边的图片 -->
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+                        <!-- 渲染放大镜下面的小图 -->
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+
+        <!-- 右边的介绍 -->
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price">价格 <strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="chima">
+                <p class="cmspan1">尺码</p>
+                <a href="">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+
+                </a>
+
+            </div>
+            <div class="p-btn">
+                <div class="p-btn-n">
+                    <span class="num">数量</span>
+                    <input type="text" id="count" value="1" />
+                </div>
+
+                <a href="javascript:;">加入购物车</a>
+                <!-- void(0) -->
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 </body>
 

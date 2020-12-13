@@ -1,6 +1,253 @@
-$w:100px;
-.main {
-    content: main;
-    width: $w;
-    height: $w;
+// 楼梯
+$ltwidth:35px;
+#loutinav {
+    width: $ltwidth;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+#loutinav ul li {
+    width: $ltwidth;
+    height: 25px;
+    border-bottom: 1px dotted #DDDDDD;
+    list-style: none;
+    font-size: $font12;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    background: #918888;
+    color: #fff;
+}
+
+#loutinav ul li span {
+    width: $ltwidth;
+    height: 25px;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loutinav ul li.last {
+    background: #5e4a4a;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#loutinav ul li.active1 span {
+    background: #c00;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:hover span {
+    background: green;
+    color: #fff;
+    display: block;
+}
+
+// 楼梯导航对应区域的内容
+.louceng {
+    width: $box_width;
+    margin: 0 auto;
+    border: 1px solid green;
+    margin-top: 10px;
+}
+
+.section1 {
+    margin-bottom: 20px;
+}
+
+//天猫超市
+.s1title {
+    width: 214px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.s1pic-left {
+    width: 235px;
+    height: 618px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.s1pic-left img {
+    width: 235px;
+    height: 618px;
+}
+
+.s1pic {
+    display: flex;
+}
+
+.s1left-title {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    color: white;
+}
+
+.s1rt-l {
+    width: 482px;
+    height: 290px;
+    border: 1px solid black;
+    background: #F1F1F1;
+}
+
+.s1-r-t {
+    display: flex;
+}
+
+.s1-r-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s1-r-b li {
+    width: 234px;
+    height: 290px;
+    float: left;
+    margin-top: 30px;
+}
+
+.s1rt-li1 {
+    width: 234px;
+    height: 290px;
+    margin-left: 20px;
+}
+
+.s1rt-l p {
+    float: left;
+    color: #000;
+    height: 57px;
+    width: 191px;
+    cursor: pointer;
+    line-height: 57px;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fengqiang {
+    background-color: greenyellow;
+}
+
+.fqbox {
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.fqboxt {
+    float: left;
+    margin-top: 60px;
+}
+
+.fqboxi {
+    width: 190px;
+    float: right;
+    margin-right: 20px;
+}
+
+.fqboxi img {
+    width: $page_width;
+}
+
+//给要渲染的盒子添加内容
+.listbox {
+    padding: 23px;
+    text-align: center;
+}
+
+.listbox img {
+    width: 185px;
+    height: 185px;
+}
+
+h5 {
+    font-size: $font14;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 5px 18px;
+}
+
+.price {
+    color: red;
+}
+
+//天猫国际 渲染
+.section2 li {
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    height: 310px;
+    position: relative;
+}
+
+.section2 li p {
+    width: 200px;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.section2 li img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.section2 li span {
+    display: block;
+}
+
+.section2 {
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.section3 {
+    height: 300px;
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+.section4 {
+    height: 300px;
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+
+.section5 {
+    height: 300px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+.section6 {
+    height: 300px;
+    background-color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.section7 {
+    height: 300px;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+.s8-title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
 }

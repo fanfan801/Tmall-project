@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "553323",
+      "name": "姓名 用户名 昵称",
+      "font_class": "xingmingyonghumingnicheng",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "720794",
+      "name": "验证码 ",
+      "font_class": "yanzhengma2",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "1221419",
+      "name": "手机",
+      "font_class": "phone",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "14151838",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    }
+  ]
+}

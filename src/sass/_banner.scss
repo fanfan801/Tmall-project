@@ -1,57 +1,94 @@
 .banner {
+    width: $page_width;
+    background: url(https://img.alicdn.com/tfs/TB1ymTusLzO3e4jSZFxXXaP_FXa-1702-1356.png)center no-repeat;
+    z-index: 0;
+}
+
+.banner-top {
+    width: $box_width;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.bantop-left {
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.bl-span1 {
+    background-color: wheat;
+    line-height: 36px;
+    width: 95px;
+    text-align: center;
+}
+
+.bl-span2 {
+    background-color: red;
+    line-height: 36px;
+    width: 95px;
+    text-align: center;
+}
+
+.bantop-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.bantop-img1 {
+    width: 100px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.bantop-right:hover .bantop-right a {
+    color: red;
+}
+
+.banner-bottom {
+    height: 450px;
     width: $box_width;
     margin: 0 auto;
-    border: 1px solid red;
+    position: relative;
 }
 
-.bannertitle {
+.banner-menu {
     width: 190px;
-    height: 40px;
-    border: 1px solid red;
-    margin-left: -328px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.btspan1,
-.btspan2 {
-    width: 95px;
-    display: block;
-    text-align: center;
-    font-size: $font14;
-    // line-height: 38px;
-}
-
-.btspan1 {
-    // background-color: red;
-}
-
-.banner_menu ul {
+.banner-menu1 ul {
     overflow: hidden;
-    padding: 10px 0;
     height: 450px;
     background-color: #fefefe;
     color: #636363;
-    margin-top: 10px;
     width: 190px;
-    border: 1px solid red;
 }
 
-.banner_menu ul li {
+.banner-menu1 ul li {
     height: 25px;
     line-height: 25px;
     padding-left: 18px;
 }
 
-.banner_menu ul li.active {
+.banner-menu1 ul li.active {
     background-color: #d9d9d9;
 }
 
-.banner_menu li a {
+.banner-menu1 li a {
     font-size: 14px;
     color: #333;
     text-decoration: none;
 }
 
-.banner_menu li span {
+.banner-menu1 li span {
     padding: 0 2px;
     font-size: 12px;
 }
@@ -60,8 +97,8 @@
     position: absolute;
     left: 191px;
     top: 0;
-    width: 998px;
-    min-height: 468px;
+    width: 860px;
+    min-height: 447px;
     border: 1px solid #f7f7f7;
     background-color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
@@ -74,57 +111,199 @@
     display: none;
 }
 
-.banner_menu {
-    width: 190px;
-    position: relative;
-}
-
-.menu-left {
-    margin-top: 20px;
-}
-
-.menu-right {
+.banner-menu2 {
     position: absolute;
+    width: 190px;
+    height: 450px;
     left: 0;
     top: 0;
+    background-color: #666;
     display: none;
 }
 
-.menu-right ul {
-    background-color: rgba(0, 0, 0, .55)
-}
-
-.menu-right ul li {
-    width: 140px;
-    height: 30px;
+.banner-menu2 li {
+    width: 152px;
+    height: 31px;
     border: 1px solid red;
-    border-radius: 10px;
-    margin: 0 auto;
     text-align: center;
-    margin: 12px;
-    line-height: 30px;
+    border-radius: 10px;
+    line-height: 31px;
+    margin: 10px 18px;
+    color: white;
+    font-size: $font14;
 }
 
-.banner_ad {
-    border: 1px solid red;
-    width: 1000px;
-    float: right;
+//轮播图
+.banner-lunbo {
+    width: 1180px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.banner-lunbo ul img {
+    height: 450px;
+}
+
+.banner-lunbo ul li {
+    position: absolute;
+    opacity: 0;
+}
+
+.banner-lunbo ul>:nth-child(1) {
+    opacity: 1;
+}
+
+.banner-lunbo ol {
+    position: absolute;
+    right: 500px;
+    bottom: -400px;
+}
+
+.banner-lunbo ol li {
+    width: 30px;
+    height: 5px;
+    background-color: #666;
     float: left;
+    margin-left: 10px;
+    text-indent: -9999em;
 }
 
-.banner_nav ul {
-    // border: 1px solid red;
+.banner-lunbo ol li.active {
+    background-color: orangered;
 }
 
-.banner_nav ul li {
-    float: left;
+.right {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
 }
 
-.bannertitle,
-.banner_ad {
-    float: left;
+a {
+    text-decoration: none;
 }
 
-.banner_ad {
-    width: 700px;
+//天猫12
+.tmall12 {
+    background: url(//img.alicdn.com/tfs/TB1c3bxrcVl614jSZKPXXaGjpXa-600-130.png) center no-repeat;
+    background-size: 300px 65px;
+    height: 105px;
+}
+
+.tm12pic {
+    width: $box_width;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tm12picl,
+.tm12picr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tm12picl-l,
+.tm12picr-l {
+    width: 250px;
+    height: 330px;
+    margin-right: 6px;
+}
+
+.tm12picl-r,
+.tm12picr-r {
+    width: 350px;
+    height: 330px;
+}
+
+.tm12picl-r-t,
+.tm12picr-r-t {
+    margin-bottom: 6px;
+}
+
+//品牌闪购 
+.brand {
+    @extend .tm12pic;
+    border: 1px solid orangered;
+}
+
+.brand1 {
+    width: 234px;
+    border: 1px solid green;
+}
+
+.brand2 {
+    width: 485px;
+    border: 1px solid green;
+}
+
+.brand3 {
+    width: 485px;
+    border: 1px solid green;
+}
+
+.brandtitle {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    line-height: 54px;
+    margin-left: 10px;
+}
+
+.brandtitle span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    line-height: 24px;
+    height: 44px;
+}
+
+.brand1 img,
+.brand2 img,
+.brand3 img {
+    width: $page_width;
+}
+
+//各品牌商标
+.brandgroup {
+    @extend .tm12pic;
+    flex-wrap: wrap;
+}
+
+.bgbox {
+    width: 122px;
+    height: 108px;
+    position: relative;
+    text-align: center;
+    line-height: 108px;
+}
+
+.bgbox img {
+    width: 70%;
+}
+
+.mark {
+    width: 122px;
+    line-height: 108px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    display: none;
+}
+
+.markspan {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: $font12;
+}
+
+.bgbox:hover .mark {
+    display: block;
+    transition: all .3s ease-out;
 }

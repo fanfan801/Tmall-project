@@ -16,7 +16,8 @@
 #top {
     width: $page_width;
     height: 40px;
-    background-color: #999;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .top-nav {
@@ -34,7 +35,6 @@
     font-size: $font12;
     margin-left: 20px;
     line-height: 38px;
-    background-color: #999;
 }
 
 .registry:hover {
@@ -87,51 +87,4 @@
 .lastnav li {
     margin: 10px;
     float: left;
-}
-
-%size {
-    width: $box_width;
-    height: $box_height;
-    background-color: orange;
-    margin: 0 auto 20px;
-}
-
-.section1 {
-    @extend %size;
-}
-
-.section2 {
-    @extend %size;
-}
-
-.section3 {
-    @extend %size;
-}
-
-.section4 {
-    @extend %size;
-}
-
-.section5 {
-    @extend %size;
-}
-
-.section6 {
-    @extend %size;
-}
-
-.section7 {
-    @extend %size;
-}
-
-.section8 {
-    @extend %size;
-}
-
-.section9 {
-    @extend %size;
-}
-
-.section10 {
-    @extend %size;
 }
