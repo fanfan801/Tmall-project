@@ -89,6 +89,7 @@ body {
   font-size: 12px;
   margin-left: 20px;
   line-height: 38px;
+  background-color: #fff;
 }
 
 .registry:hover {
@@ -102,6 +103,7 @@ body {
 .t-n-li {
   float: left;
   margin-left: 10px;
+  position: relative;
 }
 
 .t-n-li:hover a {
@@ -112,6 +114,10 @@ body {
   font-size: 12px;
   display: none;
   line-height: 25px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  background-color: white;
 }
 
 .li1:hover .t-n-li-ul {
@@ -189,9 +195,9 @@ body {
 }
 
 .banner {
-  width: 100%;
-  background: url(https://img.alicdn.com/tfs/TB1ymTusLzO3e4jSZFxXXaP_FXa-1702-1356.png) center no-repeat;
-  z-index: 0;
+  overflow: hidden;
+  margin: auto;
+  background: url(https://img.alicdn.com/tfs/TB1ymTusLzO3e4jSZFxXXaP_FXa-1702-1356.png) no-repeat center -171px;
 }
 
 .banner-top {
@@ -241,96 +247,20 @@ body {
 }
 
 .banner-bottom {
-  height: 450px;
+  height: 500px;
   width: 1230px;
   margin: 0 auto;
   position: relative;
 }
 
-.banner-menu {
-  width: 190px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.banner-menu1 ul {
-  overflow: hidden;
-  height: 450px;
-  background-color: #fefefe;
-  color: #636363;
-  width: 190px;
-}
-
-.banner-menu1 ul li {
-  height: 25px;
-  line-height: 25px;
-  padding-left: 18px;
-}
-
-.banner-menu1 ul li.active {
-  background-color: #d9d9d9;
-}
-
-.banner-menu1 li a {
-  font-size: 14px;
-  color: #333;
-  text-decoration: none;
-}
-
-.banner-menu1 li span {
-  padding: 0 2px;
-  font-size: 12px;
-}
-
-.cartlist {
-  position: absolute;
-  left: 191px;
-  top: 0;
-  width: 860px;
-  min-height: 447px;
-  border: 1px solid #f7f7f7;
-  background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  display: none;
-  transition: top 0.3s ease;
-}
-
-.item {
-  padding: 20px;
-  display: none;
-}
-
-.banner-menu2 {
-  position: absolute;
-  width: 190px;
-  height: 450px;
-  left: 0;
-  top: 0;
-  background-color: #666;
-  display: none;
-}
-
-.banner-menu2 li {
-  width: 152px;
-  height: 31px;
-  border: 1px solid red;
-  text-align: center;
-  border-radius: 10px;
-  line-height: 31px;
-  margin: 10px 18px;
-  color: white;
-  font-size: 14px;
-}
-
 .banner-lunbo {
-  width: 1180px;
+  width: 1230px;
   margin-left: 60px;
   position: relative;
 }
 
 .banner-lunbo ul img {
-  height: 450px;
+  height: 500px;
 }
 
 .banner-lunbo ul li {
@@ -344,8 +274,8 @@ body {
 
 .banner-lunbo ol {
   position: absolute;
-  right: 500px;
-  bottom: -400px;
+  right: 450px;
+  bottom: -450px;
 }
 
 .banner-lunbo ol li {
@@ -361,15 +291,108 @@ body {
   background-color: orangered;
 }
 
-.right {
-  font-size: 100px;
+#left,
+#right {
   position: absolute;
   top: 50%;
-  margin-top: -60px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 100px;
+  text-decoration: none;
+  display: none;
+}
+
+#left {
+  left: 20px;
+}
+
+#right {
+  right: 20px;
 }
 
 a {
   text-decoration: none;
+}
+
+.banner-menu {
+  width: 190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.banner-menu1 ul {
+  overflow: hidden;
+  height: 500px;
+  color: white;
+  width: 190px;
+  opacity: 1;
+}
+
+.banner-menu1 ul li {
+  height: 28px;
+  line-height: 25px;
+  padding-left: 18px;
+}
+
+.banner-menu1 ul li.active {
+  background-color: red;
+}
+
+.banner-menu1 li a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.banner-menu1 li span {
+  padding: 0 2px;
+  font-size: 12px;
+}
+
+.cartlist {
+  position: absolute;
+  left: 191px;
+  top: 0;
+  width: 860px;
+  min-height: 500px;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  transition: top 0.3s ease;
+}
+
+.item {
+  padding: 20px;
+  display: none;
+}
+
+.b1-span2:hover .banner-menu2 {
+  display: block;
+}
+
+.banner-menu2 {
+  position: absolute;
+  width: 190px;
+  height: 500px;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: none;
+}
+
+.banner-menu2 li {
+  width: 152px;
+  height: 31px;
+  border: 1px solid red;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 31px;
+  margin: 12px 18px;
+  color: white;
+  font-size: 14px;
 }
 
 .tmall12 {
@@ -409,23 +432,16 @@ a {
   margin-bottom: 6px;
 }
 
-.brand {
-  border: 1px solid orangered;
-}
-
 .brand1 {
   width: 234px;
-  border: 1px solid green;
 }
 
 .brand2 {
   width: 485px;
-  border: 1px solid green;
 }
 
 .brand3 {
   width: 485px;
-  border: 1px solid green;
 }
 
 .brandtitle {
@@ -537,16 +553,15 @@ a {
 }
 
 #loutinav ul li:hover span {
-  background: green;
   color: #fff;
   display: block;
 }
 
-.louceng {
+.dlouceng {
   width: 1230px;
   margin: 0 auto;
-  border: 1px solid green;
   margin-top: 10px;
+  background-color: #f5f5f5;
 }
 
 .section1 {
@@ -669,33 +684,6 @@ h5 {
   color: red;
 }
 
-.section2 li {
-  width: 200px;
-  padding: 10px;
-  float: left;
-  margin: 0 10px 10px 0;
-  border: 1px solid #ccc;
-  height: 310px;
-  position: relative;
-}
-
-.section2 li p {
-  width: 200px;
-  height: 48px;
-  line-height: 24px;
-  overflow: hidden;
-}
-
-.section2 li img {
-  width: 200px;
-  height: 200px;
-  display: block;
-}
-
-.section2 li span {
-  display: block;
-}
-
 .section2 {
   height: 300px;
   background-color: red;
@@ -703,9 +691,69 @@ h5 {
 }
 
 .section3 {
-  height: 300px;
-  background-color: orange;
+  padding-top: 5px;
   margin-bottom: 20px;
+}
+
+.s3-title {
+  font-size: 20px;
+  padding-left: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-left: 5px solid black;
+  margin-bottom: 10px;
+}
+
+.s3pic {
+  height: 618px;
+  display: flex;
+}
+
+.s3-left {
+  height: 618px;
+  width: 235px;
+}
+
+.s3-left img {
+  height: 618px;
+  width: 235px;
+}
+
+.s3pic ul li {
+  width: 236px;
+  height: 302px;
+  text-align: center;
+  float: left;
+  background-color: white;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.s3pic li p {
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 8px auto;
+}
+
+.s3pic li img {
+  width: 185px;
+  height: 185px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.s3pic li span {
+  display: block;
+  font-size: 18px;
+  color: #FF0036;
+  line-height: 18px;
+  margin: 10px auto;
 }
 
 .section4 {
@@ -738,6 +786,36 @@ h5 {
   line-height: 30px;
   text-align: center;
   font-family: 'Microsoft YaHei';
+  margin-bottom: 10px;
+}
+
+.section8 ul li {
+  width: 208px;
+  padding: 10px;
+  float: left;
+  margin: 0 16px 16px 0;
+  border: 1px solid #ccc;
+  height: 300px;
+  position: relative;
+}
+
+.section8 li p {
+  width: 200px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.section8 li img {
+  width: 205px;
+  height: 200px;
+  display: block;
+}
+
+.section8 li span {
+  display: block;
+  padding: 5px 0;
 }
 
 .foot {

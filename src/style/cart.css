@@ -633,6 +633,7 @@
 
 .price-sum .txt {
     text-align: right;
+    font-size: 12px;
 }
 
 .price-sum .totalprice {

@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             const $liebiaoye = $('.liebiaoye ul');
             //1.渲染section页面
             $.ajax({
-                url: 'http://localhost/dashboard/Tmallproject/php/listdata.php',
+                url: 'http://10.31.161.126/dashboard/Tmallproject/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 console.log(data);
