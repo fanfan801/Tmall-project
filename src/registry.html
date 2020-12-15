@@ -7,6 +7,7 @@
     <title>注册页面</title>
     <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/loginregistry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 
 </head>
 
@@ -14,16 +15,16 @@
 
     <div class="registry-box">
         <h1>欢迎注册</h1>
-        <p class="rb-1">已有账号？<span>登录</span></p>
+        <h5 class="rb-1">已有账号？<a>登录</a></h5>
         <form action="" method="post">
-            <p><label for="" class="label-t">用户名 </label><input type="text" name="username" id="username" placeholder="请设置用户名"><span></span></p>
-            <p><label for="" class="label-t">手机号 </label><input type="text" name="password" id="phone" placeholder="可用于登录找回密码">
-                <span></span></p>
-            <p><label for="" class="label-t">密 &nbsp;&nbsp;码</label><input type="password" name="password" id="password" placeholder="请设置登录密码"><span></span></p>
-            <p><label for="" class="label-t">验证码  </label><input type="password" name="password" id="yzm" placeholder="请输入验证码">
+            <p><label for="" class="label-t">用户名 </label><input type="text" name="username" id="username" placeholder="请设置用户名"><span class="spanintro"></span></p>
+            <p><label for="" class="label-t">手机号 </label><input type="text" name="phone" id="phone" placeholder="可用于登录找回密码">
+                <span class="spanintro"></span></p>
+            <p><label for="" class="label-t">密&nbsp;&nbsp;&nbsp; &nbsp;码</label><input type="password" name="password" id="password" placeholder="请设置登录密码"><span class="spanintro"></span></p>
+            <p><label for="" class="label-t">验证码  </label><input type="password" name="yanzheng" id="yzm" placeholder="请输入验证码"><span class="yztp"></span>
                 <a href=""></a>
             </p>
-            <p><a href="registry.html" class="ljzc">注 册</a></p>
+            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
         </form>
     </div>
 

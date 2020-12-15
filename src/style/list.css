@@ -1,3 +1,7 @@
+body {
+    background-color: #f5f5f5;
+}
+
 .header {
     height: 130px;
     width: 1190px;
@@ -89,7 +93,15 @@
     width: 1190px;
     height: 34px;
     margin: 20px auto;
-    border: 1px solid greenyellow;
+    padding-top: 5px;
+}
+
+.paixu button {
+    border: none;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
 }
 
 
@@ -105,7 +117,7 @@
     padding: 10px;
     width: 200px;
     float: left;
-    margin: 0 10px 20px 0;
+    margin: 0 16px 20px 0;
     border: 1px solid #ccc;
     height: 310px;
     position: relative;
@@ -130,4 +142,196 @@
     height: 48px;
     line-height: 24px;
     overflow: hidden;
+}
+
+
+/* 分页css */
+
+.pagelist {
+    clear: both;
+    width: 1170px;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.m-style {
+    float: right;
+    text-align: center;
+}
+
+.m-style:before,
+.m-style:after {
+    content: "";
+    display: table;
+}
+
+.m-style:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.m-style span {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style .active {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #e91e63;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #e91e63;
+}
+
+.m-style a {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style a:hover {
+    color: #fff;
+    background: #e91e63;
+}
+
+.m-style .next,
+.m-style .prev {
+    font-family: "Simsun";
+    font-size: 16px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.now,
+.count {
+    padding: 0 5px;
+    color: #f00;
+}
+
+.eg img {
+    max-width: 800px;
+    min-height: 500px;
+}
+
+input {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.foot {
+    background-image: url(//img.alicdn.com/tfs/TB14h7R34v1gK0jSZFFXXb0sXXa-1702-546.png);
+    background-size: 1702px 410px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top: 50px;
+}
+
+.footer {
+    width: 1190px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer1 {
+    width: 1190px;
+    height: 100px;
+    background: url(//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer1 a {
+    float: left;
+    display: block;
+    width: 297px;
+    height: 100px;
+    text-indent: -1000em;
+}
+
+.footer2 {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    z-index: 8;
+    padding-left: 70px;
+}
+
+.footer2-part {
+    float: left;
+    width: 20%;
+}
+
+.footer2 h4 {
+    margin-bottom: 10px;
+}
+
+.footer2-part p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+.footer2-part5 img {
+    width: 105px;
+    height: 105px;
+}
+
+.footer3 {
+    background-color: #000;
+    color: white;
+}
+
+.footer3-part1 a {
+    color: white;
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.footer3-part2 a {
+    color: #a4a4a4;
+    line-height: 30px;
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.f3-p3-img1 {
+    width: 30px;
+    height: 30px;
+}
+
+.f3-p3-img2 {
+    width: 80px;
+    height: 30px;
 }

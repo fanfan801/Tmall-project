@@ -16,11 +16,12 @@ if(isset($_POST['xingming'])){
 //2.获取前端表单传入的值。
 if(isset($_POST['submit'])){//前端点击了submit提交按钮，后端开始接收值。
     $user = $_POST['username'];
+    $phone = $_POST['phone'];
     $pass = sha1($_POST['password']);
-    $email = $_POST['email'];
-    $conn->query("insert registry values(null,'$user','$pass','$email',NOW())");//将数据传递给数据库。
+ 
+    $conn->query("insert registry values(null,'$user','$phone','pass',NOW())");//将数据传递给数据库。
     //一旦数据提交成功，回到前端的登录页面
-    header('location:http://localhost/dashboard/JS2010/week06/Day%2029-Day%2031_jquery/projectname/src/login.html');
+    header('location:http://10.31.161.126/dashboard/Tmallproject/src/login.html');
 }
 
 

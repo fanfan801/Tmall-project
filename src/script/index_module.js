@@ -2,6 +2,25 @@ define(['jlazyload'], () => {
     return {
         init: function() {
 
+            // 菜单的切换
+            $('.bl-span1').hover(function() {
+                $('.banner-menu1').show();
+                $('.banner-menu2').hide();
+
+
+            })
+            $('.bl-span2').hover(function() {
+                $('.banner-menu2').show();
+                $('.banner-menu1').hide();
+
+
+
+            })
+
+
+
+
+
             //菜单效果 点击二级菜单进入列表页
 
             //1.鼠标移入左侧的li元素，显示右侧的大盒子。
@@ -60,7 +79,7 @@ define(['jlazyload'], () => {
             const $section8 = $('.section8 ul');
             //1.渲染section页面
             $.ajax({
-                url: 'http://10.31.161.126/dashboard/Tmallproject/php/listdata.php',
+                url: 'http://10.31.161.126/dashboard/Tmallproject/php/index1.php',
                 dataType: 'json'
             }).done(function(data) {
                 // console.log(data);
@@ -153,6 +172,7 @@ define(['jlazyload'], () => {
                 var $scrolltop = $(window).scrollTop();
                 if ($scrolltop >= 600) {
                     $loutinav.show();
+                    $('.xfk').show();
                     $louceng.each(function(index, element) {
                         // console.log(element);
                         var $loucengtop = $(element).offset().top;
@@ -163,7 +183,8 @@ define(['jlazyload'], () => {
                         }
                     })
                 } else {
-                    $loutinav.hide()
+                    $loutinav.hide();
+                    $('.xfk').hide()
                 }
 
             }
@@ -200,7 +221,7 @@ define(['jlazyload'], () => {
             const $section3 = $('.s3pic ul');
             //1.渲染section页面
             $.ajax({
-                url: 'http://10.31.161.126/dashboard/Tmallproject/php/listdata1.php',
+                url: 'http://10.31.161.126/dashboard/Tmallproject/php/index2.php',
                 dataType: 'json'
             }).done(function(data) {
                 // console.log(data);
@@ -227,6 +248,8 @@ define(['jlazyload'], () => {
                     });
                 });
             });
+
+
 
 
 

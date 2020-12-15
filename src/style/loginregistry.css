@@ -32,6 +32,7 @@ body {
 
 .registry-box p {
     margin: 30px 0;
+    position: relative;
 }
 
 .registry-box input {
@@ -45,16 +46,42 @@ body {
     color: #000;
 }
 
-.ljzc {
+.spanintro {
+    display: block;
+    width: 350px;
+    height: 16px;
+    font-size: 12px;
+    position: absolute;
+    top: -25px;
+    left: 60px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.yztp {
+    display: block;
+    width: 100px;
+    height: 38px;
+    font-size: 12px;
+    border: 1px solid green;
+    position: absolute;
+    top: 0;
+    right: 46px;
+    cursor: pointer;
+}
+
+#submit {
+    border: none;
     display: block;
     width: 400px;
-    line-height: 50px;
     border-radius: 20px;
     font-size: 20px;
+    line-height: 15px;
     text-align: center;
     background: #BDCEFC;
     color: white;
     font-weight: 900;
+    border: 1px solid red;
 }
 
 

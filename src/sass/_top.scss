@@ -1,4 +1,56 @@
+// 悬浮框
+.xfk {
+    height: 40px;
+    width: $page_width;
+    background-color: black;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    display: none;
+}
+
+.xfk-c {
+    width: $box_width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xflogo {
+    width: 190px;
+    height: 27px;
+    float: left;
+}
+
+.xflogo img {
+    width: 190px;
+    height: 27px;
+}
+
+.xfk-search {
+    border: none;
+    display: block;
+    width: 600px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+.xfk-title {
+    display: block;
+    line-height: 20px;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-right: 200px;
+}
+
 //顶部广告
+body {
+    background-color: #f5f5f5;
+}
+
 .ad {
     width: 100%;
     height: 80px;
@@ -35,7 +87,8 @@
     font-size: $font12;
     margin-left: 20px;
     line-height: 38px;
-    background-color: #fff;
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 .registry:hover {

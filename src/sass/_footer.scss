@@ -7,17 +7,16 @@
 }
 
 .footer {
-    width: $box_width;
+    width: 1190px;
     margin: 0 auto;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .footer1 {
     width: 1190px;
     height: 100px;
     background: url(//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
-    margin: 25px auto;
-    padding: 0;
+    margin: 0 auto;
 }
 
 .footer1 a {
@@ -29,11 +28,18 @@
 }
 
 .footer2 {
-    display: flex;
-    justify-content: space-around;
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 40px;
     padding-bottom: 20px;
     background-color: white;
     z-index: 8;
+    padding-left: 70px;
+}
+
+.footer2-part {
+    float: left;
+    width: 20%;
 }
 
 .footer2 h4 {

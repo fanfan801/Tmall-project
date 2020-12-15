@@ -2,16 +2,17 @@ define(['jcookie'], () => {
     return {
         init: function() {
 
-
             //1.获取cookie
             function getcookietoarray() {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
                     let $arrsid = $.cookie('cookiesid').split(','); //[1,3,5]
+                    console.log($arrsid);
                     let $arrnum = $.cookie('cookienum').split(','); //[10,33,50]
                     $.each($arrsid, function(index, value) {
                         rendergoods($arrsid[index], $arrnum[index]); //index:数组的索引
                     });
                 }
+
             }
             getcookietoarray();
             //2.渲染商品列表
@@ -20,9 +21,10 @@ define(['jcookie'], () => {
                 $.ajax({
                     url: 'http://10.31.161.126/dashboard/Tmallproject/php/listdata.php',
                     dataType: 'json'
-                }).done(function(data) {
-
+                }).done(function(datalist) {
+                    data = datalist.pagedata;
                     $.each(data, function(index, value) {
+
                         if (sid === value.sid) { //通过sid的对比找到对应的数据。
                             //:hidden:匹配所有不可见元素，或者type为hidden的元素
                             //clone([Even[,deepEven]]) 克隆匹配的DOM元素并且选中这些克隆的副本。
