@@ -110,8 +110,8 @@ body {
 #sf {
     width: 200px;
     height: 200px;
-    background: orange;
-    opacity: 0.3;
+    background: purple;
+    opacity: 0.2;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -124,9 +124,9 @@ body {
     border: 1px solid rgba(0, 0, 0, .05);
     overflow: hidden;
     position: absolute;
-    left: 410px;
+    left: 450px;
     visibility: hidden;
-    z-index: 100;
+    z-index: 300;
 }
 
 #bf img {
