@@ -2,16 +2,18 @@
     height: 130px;
     width: $box_width;
     margin: 0 auto;
+    position: relative;
 }
 
 .head_logo {
     width: 290px;
     height: 130px;
-    margin-right: 50px;
+    position: absolute;
+    left: -45px;
 }
 
 .head_logo img {
-    width: 240px;
+    width: 290px;
     height: 130px;
 }
 
@@ -22,6 +24,7 @@
     width: 602px;
     margin-top: 40px;
     line-height: 36px;
+    margin-left: 330px;
     border: 2px solid red;
 }
 

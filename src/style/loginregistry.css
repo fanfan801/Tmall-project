@@ -31,7 +31,7 @@ body {
 }
 
 .registry-box p {
-    margin: 30px 0;
+    margin: 40px 0;
     position: relative;
 }
 
@@ -56,6 +56,32 @@ body {
     left: 60px;
     cursor: pointer;
     text-align: center;
+}
+
+.error {
+    display: block;
+    width: 350px;
+    height: 16px;
+    padding-left: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    cursor: pointer;
+}
+
+.zqts {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(8, 8, 110);
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    top: 12px;
+    color: white;
+    text-align: center;
+    display: none;
 }
 
 .yztp {
@@ -188,4 +214,5 @@ body {
     background: #f40;
     border-color: #f40;
     font-size: 16px;
+    color: white;
 }

@@ -79,7 +79,27 @@ body {
     font-size: $font12;
 }
 
+.top-nav-left {
+    float: left;
+    position: relative;
+}
+
+.admin {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+.jifen {
+    padding: 0 15px;
+}
+
 //导航左边
+.top-t {
+    line-height: 38px;
+}
+
 .login,
 .registry {
     display: block;
@@ -96,6 +116,10 @@ body {
 }
 
 .login:hover {
+    color: red;
+}
+
+.admin a:hover {
     color: red;
 }
 

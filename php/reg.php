@@ -1,9 +1,11 @@
 <?php
 //1.连接数据库
+header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
+header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
 include "conn.php";
 //3.获取前端传入的用户名做唯一值的检测。
-if(isset($_POST['xingming'])){
-    $name = $_POST['xingming'];
+if(isset($_POST['username'])){
+    $name = $_POST['username'];
     $result=$conn->query("select * from registry where username='$name'");
     //如果存在结果，表示该用户名已经存在，否则不存在。
     if($result->fetch_assoc()){//存在 php里面的true返回1

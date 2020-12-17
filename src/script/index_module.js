@@ -2,6 +2,12 @@ define(['jlazyload'], () => {
     return {
         init: function() {
 
+            //搜索引擎
+
+
+
+
+
             // 菜单的切换
             $('.bl-span1').hover(function() {
                 $('.banner-menu1').show();
@@ -61,14 +67,14 @@ define(['jlazyload'], () => {
             //检测是否用户已经登录
             if (localStorage.getItem('loginname')) {
                 $('.admin').show();
-                $('.login').hide();
+                $('.dlq').hide();
                 $('.admin span').html(localStorage.getItem('loginname'));
             }
 
             //退出登录 - 删除本地存储
             $('.admin a').on('click', function() {
                 $('.admin').hide();
-                $('.login').show();
+                $('.dlq').show();
                 localStorage.removeItem('loginname');
             });
 
@@ -197,7 +203,7 @@ define(['jlazyload'], () => {
             $louti.on('click', function() {
                 $(window).off('scroll');
                 $(this).addClass('active1').siblings('li').removeClass('active1');
-                var $loucengtop = $louceng.eq($(this).index() - 1).offset().top;
+                var $loucengtop = $louceng.eq($(this).index() - 1).offset().top - $('.xfk').height();
                 $('html').animate({
                     scrollTop: $loucengtop
                 }, function() {
