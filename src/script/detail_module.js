@@ -79,6 +79,14 @@ define(['jcookie'], () => {
                 }
             })
 
+            $('#count').on('input', function() {
+                let $reg = /^\d+$/g; //只能输入数字
+                let $value = $(this).val();
+                if (!$reg.test($value)) { //不是数字
+                    $(this).val(1);
+                }
+            })
+
             // 放大镜效果
             const $spic = $('#spic');
             const $bpic = $('#bpic');
@@ -152,7 +160,7 @@ define(['jcookie'], () => {
                     arrnum[$index] = parseInt(arrnum[$index]) + parseInt($('#count').val()); //重新赋值
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮被点击了');
+                alert('已加入购物车');
             });
 
         }

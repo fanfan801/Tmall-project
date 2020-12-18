@@ -11,12 +11,17 @@ define(['jlazyload'], () => {
             // 菜单的切换
             $('.bl-span1').hover(function() {
                 $('.banner-menu1').show();
+                $('.bl-span1').css('background', 'red');
+                $('.bl-span2').css('background', 'white')
                 $('.banner-menu2').hide();
+
 
 
             })
             $('.bl-span2').hover(function() {
                 $('.banner-menu2').show();
+                $('.bl-span1').css('background', 'white');
+                $('.bl-span2').css('background', 'red')
                 $('.banner-menu1').hide();
 
 
@@ -30,7 +35,7 @@ define(['jlazyload'], () => {
             //菜单效果 点击二级菜单进入列表页
 
             //1.鼠标移入左侧的li元素，显示右侧的大盒子。
-            const $list = $('.banner-menu1 li');
+            const $list = $('.banner-ul li');
             const $cartlist = $('.cartlist');
             const $items = $('.item');
 

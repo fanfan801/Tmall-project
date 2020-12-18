@@ -141,6 +141,7 @@ body {
     text-align: center;
     width: 100px;
     background-color: white;
+    z-index: 5;
 }
 
 .li1:hover .t-n-li-ul {
@@ -161,6 +162,7 @@ body {
     right: 0px;
     top: 35px;
     display: none;
+    z-index: 50;
 }
 
 .last:hover .t-n-li-last {

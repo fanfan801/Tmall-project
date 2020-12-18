@@ -176,6 +176,23 @@ a {
     display: none;
 }
 
+.item-1 p {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.item-ul {
+    width: 600px;
+}
+
+.item-a {
+    display: block;
+}
+
+.item-a li {
+    float: left;
+}
+
 //右边的菜单
 .banner-menu2 {
     position: absolute;
